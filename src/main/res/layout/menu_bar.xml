@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/value_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10sp"
+    android:paddingLeft="10sp"
+    android:background="@drawable/menu_bar_back" >
+
+    <com.teamsun.bi.ui.CustomButton1
+        android:id="@+id/arear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:visibility="visible" android:layout_centerVertical="true"/>
+	<com.teamsun.bi.ui.CustomButton1
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:text="@string/logout"
+        android:visibility="visible" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/SpaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <AbsoluteLayout
+                android:id="@+id/AbsoluteLayoutLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <com.teamsun.bi.ui.VerticalTextView
+                    android:id="@+id/YAxisName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_x="-15dp"
+                    android:autoText="false"
+                    android:gravity="fill_vertical"
+                    android:lines="1"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:textStyle="bold" >
+                </com.teamsun.bi.ui.VerticalTextView>
+				
+		
+            </AbsoluteLayout>
+            <!-- View android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/white"/-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TitleView"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <com.teamsun.bi.ui.SimplePanelView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/panelview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbarStyle="outsideInset" />
+
+        <TextView
+            android:id="@+id/XAxisName"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/PatternScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:scrollbarStyle="outsideInset" >
+
+            <AbsoluteLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/Pattern"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <!-- TextView android:text="2.3" android:id="@+id/button23" android:layout_height="50dp" android:layout_width="wrap_content"></TextView -->
+
+            </AbsoluteLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayoutLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </AbsoluteLayout>
+    </LinearLayout-->
+
+</LinearLayout>

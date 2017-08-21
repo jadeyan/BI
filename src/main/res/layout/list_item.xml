@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    android:padding="10dp" ><!-- android:background="@drawable/item_background" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_name" 
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:id="@+id/value_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/list_item_value"
+                android:textSize="15sp" />
+
+            <!--
+             Button
+            android:id="@+id/item_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" /
+            -->
+
+            <com.teamsun.bi.ui.ImageValueView
+                android:id="@+id/item_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/img"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/item_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
